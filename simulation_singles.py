@@ -369,4 +369,5 @@ if __name__ == "__main__":
 contagem_final = time.time()  # Marca o fim
 tempo = contagem_final - contagem_inicial  # Calcula a duração
 
+
 print(f"Tempo de execução: {tempo:.2f} segundos")
