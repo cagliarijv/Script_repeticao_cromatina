@@ -14,29 +14,29 @@ contagem_inicial = time.time()  # Marca o início
 def criando_cromatina(sequencia):
     # Criando o arquivo e escrevendo o conteúdo
     with open(sequencia, "w") as file:
-        file.write("""1 A1\n2 A2\n3 B1\n4 B2\n5 A1\n6 A2\n7 B1\n8 B2\n9 A1\n10 A2
-    11 B1\n12 B2\n13 A1\n14 A2\n15 B1\n16 B2\n17 A1\n18 A2\n19 B1\n20 B2
-    21 A1\n22 A2\n23 B1\n24 B2\n25 A1\n26 A2\n27 B1\n28 B2\n29 A1\n30 A2
-    31 B1\n32 B2\n33 A1\n34 A2\n35 B1\n36 B2\n37 A1\n38 A2\n39 B1\n40 B2
-    41 A1\n42 A2\n43 B1\n44 B2\n45 A1\n46 A2\n47 B1\n48 B2\n49 A1\n50 A2
-    51 B1\n52 B2\n53 A1\n54 A2\n55 B1\n56 B2\n57 A1\n58 A2\n59 B1\n60 B2
-    61 A1\n62 A2\n63 B1\n64 B2\n65 A1\n66 A2\n67 B1\n68 B2\n69 A1\n70 A2
-    71 B1\n72 B2\n73 A1\n74 A2\n75 B1\n76 B2\n77 A1\n78 A2\n79 B1\n80 B2
-    81 A1\n82 A2\n83 B1\n84 B2\n85 A1\n86 A2\n87 B1\n88 B2\n89 A1\n90 A2
-    91 B1\n92 B2\n93 A1\n94 A2\n95 B1\n96 B2\n97 A1\n98 A2\n99 B1\n100 B2
-    101 A1\n102 A2\n103 B1\n104 B2\n105 A1\n106 A2\n107 B1\n108 B2\n109 A1\n110 A2
-    111 B1\n112 B2\n113 A1\n114 A2\n115 B1\n116 B2\n117 A1\n118 A2\n119 B1\n120 B2
-    121 A1\n122 A2\n123 B1\n124 B2\n125 A1\n126 A2\n127 B1\n128 B2\n129 A1\n130 A2
-    131 B1\n132 B2\n133 A1\n134 A2\n135 B1\n136 B2\n137 A1\n138 A2\n139 B1\n140 B2
-    141 A1\n142 A2\n143 B1\n144 B2\n145 A1\n146 A2\n147 B1\n148 B2\n149 A1\n150 A2
-    151 B1\n152 B2\n153 A1\n154 A2\n155 B1\n156 B2\n157 A1\n158 A2\n159 B1\n160 B2
-    161 A1\n162 A2\n163 B1\n164 B2\n165 A1\n166 A2\n167 B1\n168 B2\n169 A1\n170 A2
-    171 B1\n172 B2\n173 A1\n174 A2\n175 B1\n176 B2\n177 A1\n178 A2\n179 B1\n180 B2
-    181 A1\n182 A2\n183 B1\n184 B2\n185 A1\n186 A2\n187 B1\n188 B2\n189 A1\n190 A2
-    191 B1\n192 B2\n193 A1\n194 A2\n195 B1\n196 B2\n197 A1\n198 A2\n199 B1\n200 B2
-    201 A1\n202 A2\n203 B1\n204 B2\n205 A1\n206 A2\n207 B1\n208 B2\n209 A1\n210 A2
-    211 B1\n212 B2\n213 A1\n214 A2\n215 B1\n216 B2\n217 A1\n218 A2\n219 B1\n220 B2
-    221 A1\n222 A2\n223 B1\n224 B2\n225 A1\n226 A2\n227 B1\n228 B2\n229 A1\n230 A2""")
+        file.write("""1 NA\n2 NA\n3 B1\n4 B1\n5 B1\n6 B1\n7 B1\n8 B1\n9 B1\n10 B1
+    11 B1\n12 B1\n13 B1\n14 B1\n15 B1\n16 B1\n17 B1\n18 B1\n19 A1\n20 A1
+    21 A1\n22 A1\n23 B1\n24 B1\n25 B1\n26 B1\n27 B1\n28 B1\n29 B1\n30 B1
+    31 B1\n32 B1\n33 B1\n34 B1\n35 B1\n36 B1\n37 B2\n38 B2\n39 B2\n40 B2
+    41 B2\n42 B2\n43 B2\n44 B2\n45 B2\n46 B2\n47 B2\n48 B2\n49 B2\n50 B2
+    51 B2\n52 B2\n53 B2\n54 B2\n55 B2\n56 B2\n57 B2\n58 B2\n59 B2\n60 B2
+    61 B1\n62 B1\n63 A2\n64 A2\n65 B1\n66 B1\n67 B2\n68 B2\n69 B2\n70 B2
+    71 B1\n72 B1\n73 B2\n74 B2\n75 B1\n76 B1\n77 A2\n78 A2\n79 A2\n80 A2
+    81 A2\n82 A2\n83 B1\n84 B1\n85 B2\n86 B2\n87 B2\n88 B2\n89 B2\n90 B2
+    91 B2\n92 B2\n93 B2\n94 B2\n95 B2\n96 B2\n97 B2\n98 B2\n99 B2\n100 B2
+    101 B2\n102 B2\n103 B2\n104 B2\n105 B2\n106 B2\n107 B2\n108 B2\n109 B1\n110 B1
+    111 B1\n112 B1\n113 A2\n114 A2\n115 A2\n116 A2\n117 A1\n118 A1\n119 A1\n120 A1
+    121 A2\n122 A2\n123 A2\n124 A2\n125 A2\n126 A2\n127 A2\n128 A2\n129 A2\n130 A2
+    131 B1\n132 B1\n133 B1\n134 B1\n135 B1\n136 B1\n137 B2\n138 B2\n139 B1\n140 B1
+    141 B2\n142 B2\n143 B2\n144 B2\n145 A2\n146 A2\n147 A2\n148 A2\n149 A2\n150 A2
+    151 A2\n152 A2\n153 B2\n154 B2\n155 B2\n156 B2\n157 A2\n158 A2\n159 B2\n160 B2
+    161 B2\n162 B2\n163 B2\n164 B2\n165 B2\n166 B2\n167 B2\n168 B2\n169 B2\n170 B2
+    171 B2\n172 B2\n173 B2\n174 B2\n175 B2\n176 B2\n177 B2\n178 B2\n179 B2\n180 B2
+    181 B2\n182 B2\n183 B2\n184 B2\n185 B2\n186 B2\n187 B2\n188 B2\n189 B2\n190 B2
+    191 B2\n192 B2\n193 B2\n194 B2\n195 B2\n196 B2\n197 B2\n198 B2\n199 B2\n200 B2
+    201 B2\n202 B2\n203 B2\n204 B2\n205 B2\n206 B2\n207 B2\n208 B2\n209 B2\n210 B2
+    211 B2\n212 B2\n213 B2\n214 B2\n215 B2\n216 B2\n217 B2\n218 B2\n219 B2\n220 B2
+    221 B2\n222 B2\n223 B2\n224 B2\n225 A2\n226 A2\n227 A2\n228 A2\n229 A2\n230 A2""")
 
     print("Arquivo 'chr10_beads.txt' criado com sucesso!")
 
@@ -68,12 +68,15 @@ def rodar_simulacao_colapso(sim_chr, block):
 def rodar_simulacao_final(sim_chr, block):
     sim_chr.removeFlatBottomHarmonic()
     sim_chr.createReporters(statistics=True, traj=True, trajFormat="cndb")
-    sim_chr.createReporters(statistics=True, traj=True, trajFormat="pdb")
     sim_chr.run(block)
     return sim_chr
 
 def analise_hi_c_densidade(folder, arquivo_trajetoria, indice):
     """Gera e salva a matriz Hi-C como .png e .dense na pasta especificada."""
+
+    # Nome do arquivo de densidade radial dentro da pasta
+    file_path_txt = os.path.join(folder, "densidade_radial_" + str(indice) + ".txt")
+
 
     # Criar a pasta se não existir
     os.makedirs(folder, exist_ok=True)
@@ -97,7 +100,7 @@ def analise_hi_c_densidade(folder, arquivo_trajetoria, indice):
     # Salvar a matriz Hi-C em formato .png
     plt.matshow(chr10_sim_HiC, norm=mpl.colors.LogNorm(vmin=0.01, vmax=chr10_sim_HiC.max()), cmap="Reds")
     plt.colorbar()
-    plt.savefig(file_image, dpi=300, bbox_inches="tight")
+    plt.savefig(file_image, dpi=400, bbox_inches="tight")
     plt.close()  # Fecha a figura para liberar memória
     print(f"Imagem Hi-C salva em {file_image}")
 
@@ -109,6 +112,7 @@ def analise_hi_c_densidade(folder, arquivo_trajetoria, indice):
     chr10_A2 = cndbTools.xyz(frames=list(range(first_frame, last_frame + 1)), beadSelection=chr10_traj.dictChromSeq[b'A2'], XYZ=[0,1,2])
     chr10_B1 = cndbTools.xyz(frames=list(range(first_frame, last_frame + 1)), beadSelection=chr10_traj.dictChromSeq[b'B1'], XYZ=[0,1,2])
     chr10_B2 = cndbTools.xyz(frames=list(range(first_frame, last_frame + 1)), beadSelection=chr10_traj.dictChromSeq[b'B2'], XYZ=[0,1,2])
+    chr10_NA = cndbTools.xyz(frames=list(range(first_frame, last_frame + 1)), beadSelection=chr10_traj.dictChromSeq[b'NA'], XYZ=[0,1,2])
 
     # Função para filtrar índices inválidos
     def filtra_indices(beadSelection, total_beads):
@@ -124,6 +128,7 @@ def analise_hi_c_densidade(folder, arquivo_trajetoria, indice):
     beadSelection_A2 = chr10_traj.dictChromSeq[b'A2']
     beadSelection_B1 = chr10_traj.dictChromSeq[b'B1']
     beadSelection_B2 = chr10_traj.dictChromSeq[b'B2']
+    beadSelection_NA = chr10_traj.dictChromSeq[b'NA']
 
     #"b'A2', b'NA', b'B3', b'B1', b'A1', b'B2'"
     # Obtendo os arrays tridimensionais
@@ -131,12 +136,14 @@ def analise_hi_c_densidade(folder, arquivo_trajetoria, indice):
     chr10_A2 = cndbTools.xyz(frames=list(range(first_frame, last_frame + 1)), beadSelection=beadSelection_A2, XYZ=[0, 1, 2])
     chr10_B1 = cndbTools.xyz(frames=list(range(first_frame, last_frame + 1)), beadSelection=beadSelection_B1, XYZ=[0, 1, 2])
     chr10_B2 = cndbTools.xyz(frames=list(range(first_frame, last_frame + 1)), beadSelection=beadSelection_B2, XYZ=[0, 1, 2])
+    chr10_NA = cndbTools.xyz(frames=list(range(first_frame, last_frame + 1)), beadSelection=beadSelection_NA, XYZ=[0, 1, 2])
 
     # Filtra os índices inválidos
     beadSelection_A1_validos = filtra_indices(beadSelection_A1, chr10_A1.shape[1])
     beadSelection_A2_validos = filtra_indices(beadSelection_A2, chr10_A1.shape[1])
     beadSelection_B1_validos = filtra_indices(beadSelection_B1, chr10_B1.shape[1])
     beadSelection_B2_validos = filtra_indices(beadSelection_B2, chr10_B1.shape[1])
+    beadSelection_NA_validos = filtra_indices(beadSelection_NA, chr10_NA.shape[1])
 
     # Calculando o RDP para A1
     r_A1, RDP_chr10_A1 = cndbTools.compute_RDP(
@@ -157,12 +164,18 @@ def analise_hi_c_densidade(folder, arquivo_trajetoria, indice):
     r_B2, RDP_chr10_B2 = cndbTools.compute_RDP(
         chr10_B2, beadSelection=beadSelection_B2_validos, radius=radius, bins=bins
     )
+    # Calculando o RDP para NA
+    r_NA, RDP_chr10_NA = cndbTools.compute_RDP(
+    chr10_NA, beadSelection=beadSelection_NA_validos, radius=radius, bins=bins
+    )
+
 
     plt.figure(figsize=(12, 5))
     plt.plot(r_A1, RDP_chr10_A1, color='red', label='A1')
     plt.plot(r_A2, RDP_chr10_A2, color='purple', label='A2')
     plt.plot(r_B1, RDP_chr10_B1, color='blue', label='B1')
     plt.plot(r_B2, RDP_chr10_B2, color='green', label='B2')
+    plt.plot(r_NA, RDP_chr10_NA, color='yellow', label='NA')
     plt.xlabel(r'r ($\sigma$)', fontsize=20,fontweight='normal', color='k')
     plt.ylabel(r'$\rho(r)/N_{type}$', fontsize=20,fontweight='normal', color='k')
     plt.legend()
@@ -172,9 +185,14 @@ def analise_hi_c_densidade(folder, arquivo_trajetoria, indice):
     file_path_densidade = os.path.join(folder, "densidade_radial_" + str(indice) + '.png')
 
     # Salvar dentro da pasta
-    plt.savefig(file_path_densidade, dpi=300)
+    plt.savefig(file_path_densidade, dpi=400)
     plt.close()  # Fecha a figura corretamente
     print(f"Imagem Hi-C salva em {file_path_densidade}")
+
+    # Salvar os dados de densidade radial no formato .txt
+    np.savetxt(file_path_txt, np.column_stack((r_A1, RDP_chr10_A1, r_A2, RDP_chr10_A2, r_B1, RDP_chr10_B1, r_B2, RDP_chr10_B2, r_NA, RDP_chr10_NA)), fmt="%.6f", delimiter=" ", header="r_A1 RDP_A1 r_A2 RDP_A2 r_B1 RDP_B1 r_B2 RDP_B2 r_NA RDP_NA")
+
+    print(f"Arquivo de densidade radial salvo em {file_path_txt}")
 
 def analise_statistics(folder_input, indice, folder='resultado'):
     """Gera e salva gráficos para as variáveis RG, Temperature e Etotal na pasta especificada."""
@@ -205,7 +223,7 @@ def analise_statistics(folder_input, indice, folder='resultado'):
             file_output = os.path.join(folder, f"{coluna}_" + str(indice) + '.png')
 
             # Salvar gráfico na pasta especificada
-            plt.savefig(file_output, dpi=300, bbox_inches="tight")
+            plt.savefig(file_output, dpi=400, bbox_inches="tight")
             print(f"Gráfico de {coluna} salvo em {file_output}")
 
             plt.close()  # Fechar o gráfico para evitar consumo excessivo de memória
@@ -285,7 +303,7 @@ def calcular_media_dense(folder="resultado", output_file="hi_c_matrix_combinado.
     np.savetxt(output_path, hi_c_combined, fmt="%.6f", delimiter=" ")
     print(f"Arquivo combinado salvo em {output_path}")
 
-def analise_hi_c_densidade_dense(folder='resultado', arquivo_dense='resultado/hi_c_matrix_combinado.dense'):
+def analise_hi_c(folder='resultado', arquivo_dense='resultado/hi_c_matrix_combinado.dense'):
     """Gera e salva a matriz Hi-C a partir de um arquivo .dense, além de um gráfico de distribuição radial."""
 
     # Criar a pasta se não existir
@@ -293,7 +311,6 @@ def analise_hi_c_densidade_dense(folder='resultado', arquivo_dense='resultado/hi
 
     # Nome dos arquivos dentro da pasta
     file_image = os.path.join(folder, f"hi_c_matrix_combinacao.png")
-    file_radial = os.path.join(folder, f"densidade_radial_combinacao.png")
 
     # Carregar matriz Hi-C do arquivo .dense
     hic_matrix = np.loadtxt(arquivo_dense)
@@ -304,22 +321,81 @@ def analise_hi_c_densidade_dense(folder='resultado', arquivo_dense='resultado/hi
     # Gerar e salvar o mapa Hi-C
     plt.matshow(hic_matrix, norm=mpl.colors.LogNorm(vmin=0.005, vmax=hic_matrix.max()), cmap="Reds")
     plt.colorbar()
-    plt.savefig(file_image, dpi=300, bbox_inches="tight")
+    plt.savefig(file_image, dpi=400, bbox_inches="tight")
     print(f"Imagem Hi-C salva em {file_image}")
 
-    # Necessário ajuste no código (adicinar para salvar dados .txt das distribuições radiais de cada simulação e posteior usar estes dados para gera um gráfico com as médias)
-    # Gerar gráfico de distribuição radial baseado na matriz Hi-C
-    radial_distribution = np.mean(hic_matrix, axis=1)  # Cálculo de média radial
-    r = np.arange(len(radial_distribution))
+def calcular_media_densidade_radial(folder='resultado'):
+    """Calcula a média da densidade radial corretamente e copia as colunas de raio sem alteração."""
 
-    plt.figure(figsize=(10, 5))
-    plt.plot(r, radial_distribution, color='blue', linestyle='-')
-    plt.xlabel("Índice Radial", fontsize=14)
+    # Criar a pasta se não existir
+    os.makedirs(folder, exist_ok=True)
+
+    # Buscar automaticamente os arquivos que seguem o padrão 'densidade_radial_*.txt'
+    arquivos = sorted([f for f in os.listdir(folder) if f.startswith('densidade_radial_') and f.endswith('.txt')])
+
+    if not arquivos:
+        print("Nenhum arquivo de densidade radial encontrado. Verifique a pasta.")
+        return
+
+    # Lista para armazenar os dados das réplicas
+    dados_matriz = []
+
+    for arquivo in arquivos:
+        caminho = os.path.join(folder, arquivo)
+        try:
+            dados_arquivo = np.loadtxt(caminho)
+            dados_matriz.append(dados_arquivo)
+        except Exception as e:
+            print(f"Erro ao carregar {arquivo}: {e}")
+
+    if not dados_matriz:
+        print("Erro ao carregar os dados de densidade radial.")
+        return
+
+    # Converter para matriz NumPy
+    dados_matriz = np.array(dados_matriz)
+
+    # Pegando os valores de raio diretamente (copiando sem alteração)
+    r_A1 = dados_matriz[0][:, 0]
+    r_A2 = dados_matriz[0][:, 2]
+    r_B1 = dados_matriz[0][:, 4]
+    r_B2 = dados_matriz[0][:, 6]
+    r_NA = dados_matriz[0][:, 8]
+
+    # Calculando a média das colunas de RDP
+    RDP_A1_media = np.mean(dados_matriz[:, :, 1], axis=0)
+    RDP_A2_media = np.mean(dados_matriz[:, :, 3], axis=0)
+    RDP_B1_media = np.mean(dados_matriz[:, :, 5], axis=0)
+    RDP_B2_media = np.mean(dados_matriz[:, :, 7], axis=0)
+    RDP_NA_media = np.mean(dados_matriz[:, :, 9], axis=0)
+
+    # Nome dos arquivos de saída
+    file_media_txt = os.path.join(folder, "media_densidade_radial.txt")
+    file_media_png = os.path.join(folder, "media_densidade_radial.png")
+
+    # Salvar os dados médios em um arquivo .txt (mantendo as colunas de raio intactas)
+    np.savetxt(file_media_txt, np.column_stack((r_A1, RDP_A1_media, r_A2, RDP_A2_media, r_B1, RDP_B1_media, r_B2, RDP_B2_media, r_NA, RDP_NA_media)), 
+               fmt="%.6f", delimiter=" ", header="r_A1 RDP_A1 r_A2 RDP_A2 r_B1 RDP_B1 r_B2 RDP_B2 r_NA RDP_NA")
+    
+    print(f"Dados de densidade radial média salvos em {file_media_txt}")
+
+    # Gerar gráfico com o eixo X = Raio e eixo Y = Médias das RDPs
+    plt.figure(figsize=(10, 4))
+    plt.plot(r_A1, RDP_A1_media, color='red', label='RDP_A1')
+    plt.plot(r_A2, RDP_A2_media, color='purple', label='RDP_A2')
+    plt.plot(r_B1, RDP_B1_media, color='blue', label='RDP_B1')
+    plt.plot(r_B2, RDP_B2_media, color='green', label='RDP_B2')
+    plt.plot(r_NA, RDP_NA_media, color='yellow', label='RDP_NA')
+    
+    plt.xlabel("Raio", fontsize=14)
     plt.ylabel("Densidade Média", fontsize=14)
-    plt.title("Distribuição Radial Hi-C")
+    plt.title("Distribuição Radial Média", fontsize=16)
+    plt.legend()
     plt.grid(True)
-    plt.savefig(file_radial, dpi=300)
-    print(f"Gráfico de distribuição radial salvo em {file_radial}")
+    plt.savefig(file_media_png, dpi=400)
+    
+    print(f"Gráfico da densidade radial média salvo em {file_media_png}")
+
 
 def notificar_som():
     winsound.Beep(970, 900)  # Toca um som de 970 Hz por 500ms
@@ -331,7 +407,7 @@ if __name__ == "__main__":
     criando_cromatina(nome_sequencia)
 
     # Quantidade de simulações
-    replicas = 5
+    replicas = 3
     print(f'--------------------------------------------------------------------------------------- Simulação de {replicas} réplicas ---------------------------------------------------------------------------------------')
     for indice in range(replicas):
         # Variáveis
@@ -361,7 +437,8 @@ if __name__ == "__main__":
 
     # Análise de combinação dos dados das simulações
     calcular_media_dense()
-    analise_hi_c_densidade_dense()
+    analise_hi_c()
+    calcular_media_densidade_radial()
 
     # Fim das simulações
     notificar_som()
